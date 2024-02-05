@@ -13,9 +13,9 @@ struct MyCharacter
 int DamageCalculator(MyCharacter& Char, int Damage)
 {
 
-	if (Char.CharClass == 1) // Перевірка класу персонажа
+	if (Char.CharClass == 1) // Character class check
 	{
-		if (Damage % 2 == 0) // Перевірка на парність
+		if (Damage % 2 == 0) // Parity check
 		{
 			Char.Health = Char.Health - 2 * Damage;
 		}
@@ -26,9 +26,9 @@ int DamageCalculator(MyCharacter& Char, int Damage)
 		return 0;
 	}
 
-	if (Char.CharClass == 2) // Перевірка класу персонажа
+	if (Char.CharClass == 2) // Character class check
 	{
-		if (Damage % 2 != 0) // Перевірка на непарність
+		if (Damage % 2 != 0) // Check for oddness
 		{
 			Char.Health = Char.Health - 3 * Damage;
 		}
